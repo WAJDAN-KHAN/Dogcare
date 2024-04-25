@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DogCare</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom style */
+        .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+            transform: scale(.7) !important;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+        }
+    </style>
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+</head>
+
+<body>
+    <section class="header-section">
+        <div class="d-flex justify-content-between flex-wrap align-items-center">
+            <div class=" d-flex align-items-center">
+                <img class="logo"
+                    src="./assets/images/c2VydmljZT1pbWFnZXMmc3JjPWh0dHBzJTNBJTJGJTJGZG9nY2FyZTI0LmRlJTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkYyMDIxJTJGMDElMkZkb2djYXJlMjQtMDQtMS0xMDI0eDMwMS5wbmcmY2FjaGVNYXJrZXI9MTcwNjg3NzQ5Mi04MTcwJnRva2.png"
+                    alt="">
+                <img class="logo-2"
+                    src="./assets/images/c2VydmljZT1pbWFnZXMmc3JjPWh0dHBzJTNBJTJGJTJGZG9nY2FyZTI0LmRlJTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkYyMDIzJTJGMDIlMkZiYXJtZW5pYS1sb2dvLnBuZyZjYWNoZU1hcmtlcj0xNzA2ODc3NDA5LTE0NDIxJnRva2VuPTJhMmM0.png"
+                    alt="">
+            </div>
+            <div class="d-flex gap-3 align-items-center">
+                <a class="elementor-button elementor-button-link elementor-size-sm" href="tel:022195673393%20">
+                    <span class="elementor-button-content-wrapper">
+                        <span class="elementor-button-text">📞 +49 221 95673393 </span>
+                    </span>
+                </a>
+                <a class=" bttn" href="#">
+                    <span class="elementor-button-content-wrapper">
+                        <span class="elementor-button-text">Jetzt online berechnen!</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- main-section  -->
+
+    <section class="main-section">
+        <div class="container">
+            <div class="row m-0 align-items-center reverse">
+                <div class="col-md-6 col-12">
+                    <div class="text-lefts">
+                        <h1>
+                            The animal insurance
+                        </h1>
+                        <h2 class="mb-4">
+                            All-round protection <span style="color: #ffa445 !important;">
+                                for dogs and cats
+                            </span>
+                        </h2>
+                        <a href="#" data-attach-params="skip"
+                            class="button-large-orange button-full-width-mobile hero w-button">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">About the tariffs</font>
+                            </font>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div id="w-node-_825a10d4-3b23-2b58-d808-bf86019ab8ea-92f1e0ec"
+                        class="w-layout-cell cell-hero-image home">
+                        <div class="wrapper-image-hero-rd-2 home">
+                            <div class="position-absolut trustpilot">
+                                <div class="wrapper-truspilot-image hide-tablet"><a href="#" target="_blank"
+                                        class="tp-image-link w-inline-block"><img
+                                            src="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/65bb595c2eee03efc28daa51_trustpilot.svg"
+                                            loading="lazy" alt=""></a></div>
+                            </div>
+                            <div class="position-absolut cobranding">
+                                <div class="wrapper-co-branding-image hide-tablet"><img
+                                        src="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/6617e29efa558f9869ac3c0f_FN_co-logo_no-BG.svg"
+                                        loading="lazy" alt=""></div>
+                            </div>
+                            <div class="position-absolut google-rating">
+                                <div class="wrapper-google-image hide-tablet"><img
+                                        src="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/649c1f5919aff0eec222d15e_prop%3Dgoogle%2C%20trustpilot%3DDefault.svg"
+                                        loading="lazy" alt="" class="image-google-rating"></div>
+                            </div>
+                            <div class="inner-wrapper-hero-image-rd home"><img
+                                    src="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/65afdebcc7ea3c577bb13107_hero-petolo-desktop%20(1).webp"
+                                    loading="eager" sizes="(max-width: 991px) 100vw, 1120px"
+                                    srcset="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/65afdebcc7ea3c577bb13107_hero-petolo-desktop%20(1)-p-500.webp 500w, https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/65afdebcc7ea3c577bb13107_hero-petolo-desktop%20(1)-p-800.webp 800w, https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/65afdebcc7ea3c577bb13107_hero-petolo-desktop%20(1)-p-1080.webp 1080w, https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/65afdebcc7ea3c577bb13107_hero-petolo-desktop%20(1).webp 1300w"
+                                    alt="" class="image-hero-desktop-rd"><img
+                                    src="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/650d6b3d413d9f6cc56a0323_Hero-animation-desktop-home.svg"
+                                    loading="lazy" alt="" class="animation-hero-desktop-rd"><img
+                                    src="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/65afdebb684336064b446e0e_hero-petolo%20(1).webp"
+                                    loading="eager" sizes="(max-width: 479px) 81vw, (max-width: 767px) 54vw, 100vw"
+                                    srcset="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/65afdebb684336064b446e0e_hero-petolo%20(1)-p-500.webp 500w, https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/65afdebb684336064b446e0e_hero-petolo%20(1).webp 750w"
+                                    alt="" class="image-hero-mobile-rd"><img
+                                    src="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/650d6b3cdf2db5a6a01a2b87_Hero-animation-mobile-home.svg"
+                                    loading="lazy" alt="" class="animation-hero-mobile-rd"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- cards-section -->
+    <section class="cards-section">
+        <div class="container">
+            <div class="row m-0 gapp">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="tile-home orange">
+                        <div class="tile-image-round"><img
+                                src="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/650400a8fd153e16af080a0a_Image-round-tile-1.webp"
+                                loading="lazy"
+                                alt="Hund schaut in Kamera: Mit einem Krankenschutz für Hunde sind Sie gut abgesichert"
+                                class="image-tile-home"><img
+                                src="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/650400a8f145b2e74526ceed_Png-round-tile-1.webp"
+                                loading="lazy"
+                                alt="Hund schaut in Kamera: Mit einem Krankenschutz für Hunde sind Sie gut abgesichert"
+                                class="png-tile-home"><img
+                                src="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/650400884622b7253b64fc48_line-round-tile-1.svg"
+                                loading="lazy"
+                                alt="Hund schaut in Kamera: Mit einem Krankenschutz für Hunde sind Sie gut abgesichert"
+                                class="line-tile-home"
+                                style="will-change: transform; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(94.9104deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                        </div>
+
+                        <div class="mb-2">
+                            <h3 class="text-center heading-style-h4">
+                                Krankenschutz für Hunde
+                            </h3>
+                        </div>
+
+                        <div class="mb-1">
+                            <div class="heading-style-h5">ab <span style="color: #ffa445 !important;">29,90€</span>
+                                monatlich</div>
+                        </div>
+                        <div class="my-2">
+                            <button href="#" class="button-large-orange w-button">Tarif finden</button>
+                        </div>
+                        <div class="accordion">
+                            <a data-attach-params="skip" href="#" class="button-akkordeon w-inline-block">
+                                <div style="display: none;" class="holder-view-less-text">
+                                    <div class="heading-style-h6">Weniger erfahren</div>
+                                </div>
+                                <div class="holder-view-more" style="display: block;">
+                                    <div class="heading-style-h6">Mehr erfahren</div>
+                                </div><img
+                                    src="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/629a1f9f0aa329a50af1e1b7_path.svg"
+                                    loading="lazy"
+                                    style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                                    alt="" class="icon-akkordeion">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="tile-home orange">
+                        <div class="tile-image-round"><img
+                                src="./assets/images/650400a8daf4050205866708_Image-round-tile-2.webp" loading="lazy"
+                                alt="Hund schaut in Kamera: Mit einem Krankenschutz für Hunde sind Sie gut abgesichert"
+                                class="image-tile-home"><img
+                                src="./assets/images/650400a8c284645ab46d8309_Png-round-tile-2_1.webp" loading="lazy"
+                                alt="Hund schaut in Kamera: Mit einem Krankenschutz für Hunde sind Sie gut abgesichert"
+                                class="png-tile-home"><img
+                                src="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/650400884622b7253b64fc48_line-round-tile-1.svg"
+                                loading="lazy"
+                                alt="Hund schaut in Kamera: Mit einem Krankenschutz für Hunde sind Sie gut abgesichert"
+                                class="line-tile-home"
+                                style="will-change: transform; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(94.9104deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                        </div>
+
+                        <div class="mb-2">
+                            <h3 class="text-center heading-style-h4">
+                                Krankenschutz für Katzen
+                            </h3>
+                        </div>
+
+                        <div class="mb-1">
+                            <div class="heading-style-h5">ab <span style="color: #ffa445 !important;">19,90€</span>
+                                monatlich</div>
+                        </div>
+                        <div class="my-2">
+                            <button href="#" class="button-large-orange w-button">Tarif finden</button>
+                        </div>
+                        <div class="accordion">
+                            <a data-attach-params="skip" href="#" class="button-akkordeon w-inline-block">
+                                <div style="display: none;" class="holder-view-less-text">
+                                    <div class="heading-style-h6">Weniger erfahren</div>
+                                </div>
+                                <div class="holder-view-more" style="display: block;">
+                                    <div class="heading-style-h6">Mehr erfahren</div>
+                                </div><img
+                                    src="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/629a1f9f0aa329a50af1e1b7_path.svg"
+                                    loading="lazy"
+                                    style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                                    alt="" class="icon-akkordeion">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="tile-home grey">
+                        <div class="tile-image-round"><img
+                                src="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/650400a8fd153e16af080a0a_Image-round-tile-1.webp"
+                                loading="lazy"
+                                alt="Hund schaut in Kamera: Mit einem Krankenschutz für Hunde sind Sie gut abgesichert"
+                                class="image-tile-home"><img
+                                src="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/650400a8f145b2e74526ceed_Png-round-tile-1.webp"
+                                loading="lazy"
+                                alt="Hund schaut in Kamera: Mit einem Krankenschutz für Hunde sind Sie gut abgesichert"
+                                class="png-tile-home"><img
+                                src="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/650400884622b7253b64fc48_line-round-tile-1.svg"
+                                loading="lazy"
+                                alt="Hund schaut in Kamera: Mit einem Krankenschutz für Hunde sind Sie gut abgesichert"
+                                class="line-tile-home"
+                                style="will-change: transform; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(94.9104deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                        </div>
+
+                        <div class="mb-2">
+                            <h3 class="text-center heading-style-h4">
+                                Haftpflicht­versicherung für Hunde
+                            </h3>
+                        </div>
+
+                        <div class="mb-1">
+                            <div class="heading-style-h5">ab <span style="color: #ffa445 !important;">5,50€</span>
+                                monatlich</div>
+                        </div>
+                        <div class="my-2">
+                            <button href="#" class="button-large-orange w-button">Tarif finden</button>
+                        </div>
+                        <div class="accordion">
+                            <a data-attach-params="skip" href="#" class="button-akkordeon w-inline-block">
+                                <div style="display: none;" class="holder-view-less-text">
+                                    <div class="heading-style-h6">Weniger erfahren</div>
+                                </div>
+                                <div class="holder-view-more" style="display: block;">
+                                    <div class="heading-style-h6">Mehr erfahren</div>
+                                </div><img
+                                    src="https://assets-global.website-files.com/629a1f9f0aa3294457f1e0df/629a1f9f0aa329a50af1e1b7_path.svg"
+                                    loading="lazy"
+                                    style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+                                    alt="" class="icon-akkordeion">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="protect-section">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="  has-text-align-center">Sie wollen etwas genaues wissen?</h2>
+                <p style="font-size: 16px; color: #004b5d;">
+                    Unsere Experten sind gerne für Sie da!
+                </p>
+            </div>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <div class="mail-card">
+                    <img src="./assets/images/mail_b.svg" alt="">
+                    <span>Mail an <br>petprotect@barmenia.de</span>
+                </div>
+                <div class="mail-card">
+                    <img src="./assets/images/hotline_b.svg" alt="">
+                    <span>Anrufen unter <br> 0202 4383825</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cover-section">
+        <div class="container">
+            <div class="row m-0 py-3">
+                <div class="col-md-8 col-12">
+                    <h2 class="wp-block-heading" id="entdecke-unsere-versicherungen">Der clevere PETPROTECT OP-
+                        <br>Schutz
+                    </h2>
+                    <p class="para coverr">Die OP-Versicherung ist auch gesondert verfügbar. Sichern Sie Ihren Hund oder
+                        Ihre
+                        Katze gegen Kosten bei Operationen ab.</p>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="button">
+                        <a class="wp-block-button__link has-text-color has-background wp-element-button" href="#"
+                            style="border-radius:100px;color:#084b5b;background-color:#4bff99;padding-top:20px;padding-right:2em;padding-bottom:20px;padding-left:2em">OP-Versicherung
+                            für Hunde</a>
+                        <a class="wp-block-button__link has-text-color has-background wp-element-button" href="#"
+                            style="border-radius:100px;color:#084b5b;background-color:#4bff99;padding-top:20px;padding-right:2em;padding-bottom:20px;padding-left:2em">OP-Versicherung
+                            für Hunde</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- protect-section -->
+
+    <section class="protect-section">
+        <div class="container">
+            <div class="tittle py-4 text-center">
+                <h2 class="title2">Die PETPROTECT <br> Tierkrankenversicherung im Detail</h2>
+                <p></p>
+            </div>
+            <div class="row m-0 py-3 align-items-center">
+                <div class="col-md-6 col-12">
+                    <div class="left-img">
+                        <img src="./assets/images/PetProtect_Parker-und-Isaiah_Tierarzt-521x521.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="content">
+                        <h1 class="image-text__text--green">
+                            UMFASSENDER SCHUTZ
+                        </h1>
+                        <h3>Umfassender Schutz, hohe Erstattung</h3>
+                        <p class="desc">PETPROTECT bietet Ihnen bis zu 100% Kostenübernahme für veterinärmedizinische
+                            Heilbehandlungen bei Krankheit oder nach einem Unfall, ambulante und stationäre
+                            Behandlungen, OP Kosten, Medikamente etc.</p>
+                        <p class="desc">PETPROTECT erstattet den höchsten Satz der Gebührenordnung, nach der Tierärzte
+                            berechnen (bis zu 4-facher GOT-Satz).</p>
+                        <p class="desc">Der Schutz gilt auch im Ausland: Für die Dauer Ihres Auslandsaufenthalts,
+                            weltweit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-0 py-5 align-items-center">
+                <div class="col-md-6 col-12">
+                    <div class="content">
+                        <h1 class="image-text__text--green">
+                            UNFÄLLE PASSIEREN
+                        </h1>
+                        <h3>Versicherungsbeginn ist schon morgen</h3>
+                        <p class="desc">PETPROTECT bietet Ihnen schnellen Schutz für Ihren Vierbeiner:</p>
+                        <p class="desc">Sie erhalten den Wunschtarif für Ihren Vierbeiner schon nach einer einfachen
+                            Frage zum Gesundheitszustand Ihres Lieblings und ersparen sich eine langwierige
+                            Gesundheitsprüfung.</p>
+                        <p class="desc">Bei Unfällen kann die Behandlung nicht warten. Deswegen übernimmt die PETPROTECT
+                            Versicherung in diesem Fall ohne Wartezeit die Kosten für die Behandlung. Der Schutz gegen
+                            hohe Kosten in Folge von Unfällen gilt bereits ab dem ersten Tag.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="left-img">
+                        <img src="./assets/images/PetProtect_Hund_Dalmtiner_Pfote_Tierarzt-521x521.webp" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="row m-0 py-3 align-items-center">
+                <div class="col-md-6 col-12">
+                    <div class="left-img">
+                        <img src="./assets/images/PetProtect_Hund_Bordercollie_Tierarzt-521x521.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="content">
+                        <h1 class="image-text__text--green">
+                            SMARTE KOSTENABSICHERUNG
+                        </h1>
+                        <h3>Kranken- und OP-Versicherung in einem</h3>
+                        <p class="desc">PETPROTECT bietet mehr als viele vergleichbare Angebote:</p>
+                        <p class="desc">Mit einer umfassenden Krankenversicherung für Ihr Tier sind Sie für die Kosten
+                            bei Tierarzt, Operation, Zahnbehandlung, Klinikaufenthalt sowie für Arznei-, Verband-, Heil-
+                            und Hilfsmittel bestens abgesichert.</p>
+                        <p class="desc">Durch die freie Wahl von Arzt und Klinik entscheiden alleine Sie, wem Sie Ihr
+                            Tier anvertrauen: Bei allen unseren Krankenversicherungs- und OP-Tarifen können Sie selbst
+                            bestimmen, in welche vertrauenswürdigen Hände Sie Ihr Tier geben.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-0 py-5 align-items-center">
+                <div class="col-md-6 col-12">
+                    <div class="content">
+                        <h1 class="image-text__text--green">
+                            SCHNELLE HILFE VON ZUHAUSE AUS
+                        </h1>
+                        <h3>Videosprechstunde: Online-Tierarzt mit dem Smartphone</h3>
+                        <p class="desc">Im Notfall ist guter Rat oft teuer und leider häufig weit entfernt. Mit der
+                            Online-Videosprechstunde hat sich dieses Problem für Sie und Ihren Vierbeiner erledigt.</p>
+                        <p class="desc">Als Kunde von PETPROTECT können Sie den Service von FirstVet oder Pfotendoctor
+                            jederzeit 24 Stunden am Tag an 365 Tagen im Jahr kostenfrei nutzen. Und das beispielsweise
+                            auch im Auslandsurlaub!</p>
+                        <p class="desc">Einfach die App des Telemedizin Anbieters herunterladen, Konto anlegen und im
+                            Bedarfsfall per Videosprechstunde den Rat eines erfahrenen Tiermediziners einholen – Die
+                            Rechnung wird von PETPROTECT beglichen.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="left-img">
+                        <img src="./assets/images/PetProtect_Katze_Mann_Handy-521x521.webp" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cover-section">
+        <div class="container">
+            <div class="d-flex justify-content-between flex-wrap align-items-center">
+                <div>
+                    <h2 class="wp-block-heading" id="entdecke-unsere-versicherungen">Entdecken Sie unsere <br>
+                        Versicherungen
+                    </h2>
+                    <p class="para">Sie möchten den besten Schutz, der Ihr Tier <br> umfassend versichert?</p>
+                </div>
+                <div class="button">
+                    <a class="wp-block-button__link has-text-color has-background wp-element-button" href="#"
+                        style="border-radius:100px;color:#084b5b;background-color:#4bff99;padding-top:20px;padding-right:2em;padding-bottom:20px;padding-left:2em">Tarif
+                        wählen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="protect-section">
+        <div class="container">
+            <div class="title-content">
+                <h2>Ein Tier kann schnell teuer werden</h2>
+                <p class="desc">Schützen Sie sich vor hohen Auf-Einmal-Kosten im Fall von Behandlungen, Operationen oder
+                    sonstigen Unfällen, für die Sie als Halter haften.</p>
+            </div>
+            <div class="row m-0 flex-wrap align-items-center">
+                <div class="col-md-7 col-12">
+                    <div class="cards">
+                        <div class="costs__wrapper come-in">
+                            <div class="d-flex gap-2 align-items-center">
+                                <div class="costs__text-wrapper">
+                                    <h3>VERGIFTUNG</h3>
+                                    <p class="costs__text--green">1.200€</p>
+                                </div>
+                                <p class="costs__text--blue">Der Giftköder lag in der Parkhecke. Puh, das ging gerade
+                                    nochmal gut!</p>
+                            </div>
+                        </div>
+                        <div class="costs__wrapper come-in">
+                            <div class="d-flex gap-2 align-items-center">
+                                <div class="costs__text-wrapper">
+                                    <h3>MAGEN-OP</h3>
+                                    <p class="costs__text--green">2.500€</p>
+                                </div>
+                                <p class="costs__text--blue">Der Hund hat ein Spielzeug ver- <br> schluckt. Danach
+                                    musste er
+                                    sogar in Reha…</p>
+                            </div>
+                        </div>
+                        <div class="costs__wrapper come-in">
+                            <div class="d-flex gap-2 align-items-center">
+                                <div class="costs__text-wrapper">
+                                    <h3>LAPTOP</h3>
+                                    <p class="costs__text--green">1.500€</p>
+                                </div>
+                                <p class="costs__text--blue">Bei Freunden unter dem Tisch am Kabel hängen geblieben?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-12">
+                    <div class="costs__images">
+                        <img src="./assets/images/PetProtect_Hund_Bordercollie_Geld.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- reviews-section -->
+    <div class="reviews-section">
+        <div class="container">
+            <div class="text-center">
+                <p style="color: #003264;">
+                    <strong>
+                        KUNDENBEWERTUNGEN
+                    </strong>
+                </p>
+                <h2 class="titlle">
+                    Unsere Kund:innen und ihre Fellnasen <span style="color: #ffa445;">
+                        sind zufrieden
+                    </span>
+                </h2>
+            </div>
+
+            <div class="slider pt-5">
+                <div class="slide-1">
+                    <div class="slide-content">
+                        <div class="wrapper-erfahrungen-card">
+                            <div class="margin-bottom-1-5-4">
+                                <div class="wrapper-stars-tp"><img loading="lazy" alt=""
+                                        src="./assets/images/6461fe5f7951b1100b64b0cf_5stars.svg">
+                                </div>
+                            </div>
+                            <div class="margin-bottom-1-6">
+                                <div class="wrapper-name-tp-reviews">
+                                    <div class="heading-style-h6 text-align-left-everywhere">Andrea Pflug</div>
+                                    <div class="wrapper-verifiziert">
+                                        <div class="w-embed"><svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="9.99365" cy="9.44043" r="9" fill="#003264"></circle>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.35417 11.6079L6.22079 9.27543L5.49365 10.0704L8.35417 13.1904L14.4937 6.47793L13.7665 5.69043L8.35417 11.6079Z"
+                                                    fill="white" stroke="white" stroke-width="0.666667"></path>
+                                            </svg></div>
+                                        <div class="legal-text blue">Verifiziert</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="margin-bottom-1-6">
+                                <div class="heading-style-h5 text-align-left">Sehr kompetente Online-Beratung gehabt
+                                </div>
+                            </div>
+                            <div class="margin-bottom-1-6">
+                                <p class="paragraph-style-p-light text-align-left">Sehr kompetente Online-Beratung
+                                    gehabt. Tierarztrechnung wurde prompt erstattet.</p>
+                            </div>
+                        </div>
+                        <div class="wrapper-date">
+                            <div class="legal-text text-align-left blue">Datum der Erfahrung: </div>
+                            <div class="legal-text text-align-left blue">11.09.2023</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-2">
+                    <div class="slide-content">
+                        <div class="wrapper-erfahrungen-card">
+                            <div class="margin-bottom-1-5-4">
+                                <div class="wrapper-stars-tp"><img loading="lazy" alt=""
+                                        src="./assets/images/6461fe5f7951b1100b64b0cf_5stars.svg">
+                                </div>
+                            </div>
+                            <div class="margin-bottom-1-6">
+                                <div class="wrapper-name-tp-reviews">
+                                    <div class="heading-style-h6 text-align-left-everywhere">Kunde</div>
+                                    <div class="wrapper-verifiziert">
+                                        <div class="w-embed"><svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="9.99365" cy="9.44043" r="9" fill="#003264"></circle>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.35417 11.6079L6.22079 9.27543L5.49365 10.0704L8.35417 13.1904L14.4937 6.47793L13.7665 5.69043L8.35417 11.6079Z"
+                                                    fill="white" stroke="white" stroke-width="0.666667"></path>
+                                            </svg></div>
+                                        <div class="legal-text blue">Verifiziert</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="margin-bottom-1-6">
+                                <div class="heading-style-h5 text-align-left">So schnell, nie mitgerechnet
+
+                                </div>
+                            </div>
+                            <div class="margin-bottom-1-6">
+                                <p class="paragraph-style-p-light text-align-left">Ohne wenn und aber, Rechnung
+                                    eingescannt abgeschickt, und nach 1, 2 Tage wurde sie bezahlt. Danke für das
+                                    schnelle Handeln.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wrapper-date">
+                            <div class="legal-text text-align-left blue">Datum der Erfahrung: </div>
+                            <div class="legal-text text-align-left blue">16.09.2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-3">
+                    <div class="slide-content">
+                        <div class="wrapper-erfahrungen-card">
+                            <div class="margin-bottom-1-5-4">
+                                <div class="wrapper-stars-tp"><img loading="lazy" alt=""
+                                        src="./assets/images/6461fe5f7951b1100b64b0cf_5stars.svg">
+                                </div>
+                            </div>
+                            <div class="margin-bottom-1-6">
+                                <div class="wrapper-name-tp-reviews">
+                                    <div class="heading-style-h6 text-align-left-everywhere">Nadine Meister
+                                    </div>
+                                    <div class="wrapper-verifiziert">
+                                        <div class="w-embed"><svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="9.99365" cy="9.44043" r="9" fill="#003264"></circle>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.35417 11.6079L6.22079 9.27543L5.49365 10.0704L8.35417 13.1904L14.4937 6.47793L13.7665 5.69043L8.35417 11.6079Z"
+                                                    fill="white" stroke="white" stroke-width="0.666667"></path>
+                                            </svg></div>
+                                        <div class="legal-text blue">Verifiziert</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="margin-bottom-1-6">
+                                <div class="heading-style-h5 text-align-left">Ich hab mittags meine Rechnung…
+
+                                </div>
+                            </div>
+                            <div class="margin-bottom-1-6">
+                                <p class="paragraph-style-p-light text-align-left">Ich hab mittags meine Rechnung
+                                    eingereicht und Abends wurde das Geld schon überwiesen. Top Service und sehr netter
+                                    telefonischer Kontakt
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wrapper-date">
+                            <div class="legal-text text-align-left blue">Datum der Erfahrung: </div>
+                            <div class="legal-text text-align-left blue">18.09.2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-4">
+                    <div class="slide-content">
+                        <div class="wrapper-erfahrungen-card">
+                            <div class="margin-bottom-1-5-4">
+                                <div class="wrapper-stars-tp"><img loading="lazy" alt=""
+                                        src="./assets/images/6461fe5f7951b1100b64b0cf_5stars.svg">
+                                </div>
+                            </div>
+                            <div class="margin-bottom-1-6">
+                                <div class="wrapper-name-tp-reviews">
+                                    <div class="heading-style-h6 text-align-left-everywhere">Wolfgang Grabert
+                                    </div>
+                                    <div class="wrapper-verifiziert">
+                                        <div class="w-embed"><svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="9.99365" cy="9.44043" r="9" fill="#003264"></circle>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.35417 11.6079L6.22079 9.27543L5.49365 10.0704L8.35417 13.1904L14.4937 6.47793L13.7665 5.69043L8.35417 11.6079Z"
+                                                    fill="white" stroke="white" stroke-width="0.666667"></path>
+                                            </svg></div>
+                                        <div class="legal-text blue">Verifiziert</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="margin-bottom-1-6">
+                                <div class="heading-style-h5 text-align-left">Sehr gute Erfahrung gemacht. Hat alles…
+
+                                </div>
+                            </div>
+                            <div class="margin-bottom-1-6">
+                                <p class="paragraph-style-p-light text-align-left">Sehr gute Erfahrung gemacht. Hat
+                                    alles schnell geklappt. Erstattung erfolgte in wenigen Tagen.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wrapper-date">
+                            <div class="legal-text text-align-left blue">Datum der Erfahrung: </div>
+                            <div class="legal-text text-align-left blue">11.09.2023</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- faq section  -->
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="text-center">
+                <div class="uppertitle">FAQ</div>
+                <h2 class="heading-style-h2"><strong>Häufige Fragen zur </strong><span style="color: #ffa445;">petolo
+                        <br>Tierversicherung</span><br></h2>
+                <p class="heading-style-h5-light">Wir beantworten die häufigsten Fragen zur petolo Tierversicherung im
+                    Detail. Ihre Frage ist hier nicht aufgeführt? <a
+                        href="https://support.petolo.de/hc/de/articles/10406756721948?=&amp;gduid=MgpRIbuifXSdeo44FgLAvPvqQZKJbDIF"
+                        class="link">Kontaktieren Sie uns</a> – wir helfen Ihnen gerne weiter!<br></p>
+            </div>
+            <div class="py-3">
+                <div class="accordion" id="myAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne">Welche Tiere kann man mit der petolo
+                                Tierkrankenversicherung versichern?</button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <p>Mit der petolo Tierkrankenversicherung können Hunde und Katzen versichert werden. Für
+                                    Hunde gibt es die Hundekrankenversicherung, für Katzen die
+                                    Katzenkrankenversicherung. Beide Tierversicherungen enthalten einen OP-Schutz, somit
+                                    hat die petolo Tierkrankenversicherung einen Vollschutz. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo">Welche Kosten übernimmt eine
+                                Tierkrankenversicherung?</button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <p>Die Tierkrankenversicherung von petolo übernimmt die Kosten für alle medizinisch
+                                    notwendigen Behandlungen, sowohl stationär als auch ambulant, und diverse andere
+                                    Behandlungen und Untersuchungen wie Vorsorgemaßnahmen, Wurmkuren, Impfungen,
+                                    Physiotherapie, das Chippen Ihres Haustieres und mehr. Dabei steht Ihnen jährlich
+                                    ein Gesundheits- und ein SOS-Budget zur Verfügung, das viele Kosten rund um die
+                                    Versorgung Ihres Tieres abdeckt, z. B. eine Kastration oder Sterilisation. Details
+                                    können Sie den Tarifen unserer Hundekrankenversicherung und
+                                    Katzenkrankenversicherung entnehmen. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree">Was bedeutet der GOT-Satz?</button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <p>GOT steht für die Gebührenordnung für Tierärzte. In dieser Gebührenordnung werden die
+                                    Kosten für einzelne Behandlungen und Versorgungsmaßnahmen für Tiere festgelegt. Er
+                                    kann vom 1-fachen bis zum 3-fachen oder sogar 4-fachen wählen.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour">Bis zu welchem GOT-Satz übernimmt die petolo
+                                Tierkranken­versicherung die Kosten?</button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <p>Die petolo Tierkrankenversicherung übernimmt bis zum 4-fachen GOT-Satz die Kosten für
+                                    die Behandlung Ihres Tieres. Sie und Ihr Vierbeiner sind somit bestens abgesichert.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive">Übernimmt die petolo Tierkrankenversicherung 100% der
+                                Tierarztkosten?</button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <p>Je nach Tarif übernimmt die petolo Tierkrankenversicherung bis zu 100% der Kosten für
+                                    den Tierarzt, bis die maximale Jahreshöchstleistung erreicht ist. Im Komfort-Tarif
+                                    der Krankenversicherung für Hunde und Katzen werden bis zu 80% der Tierarztkosten
+                                    übernommen, im Premium-Tarif bis zu 100% und im Premium Plus-Tarif werden alle
+                                    versicherten Kosten zu 100% übernommen. Die Jahreshöchstleistung ist in den ersten
+                                    zwei Jahren in allen Tarifen begrenzt und unterschiedlich hoch, ab dem dritten Jahr
+                                    genießen Sie eine unbegrenzte Kostenübernahme zum vereinbarten Prozentsatz.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix">Wie funktioniert die Kostenerstattung über die
+                                Tierkrankenversicherung?</button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <p>Die Kostenerstattung bei petolo ist einfach und geht schnell. Sobald Sie die Rechnung
+                                    Ihres Tierarztes erhalten haben, können Sie diese bei uns einreichen. Wir berechnen
+                                    die Kosten, die Sie von uns erstattet bekommen (z. B. 80% im Komfort-Tarif) und
+                                    überweisen den Betrag innerhalb weniger Tage auf Ihr Konto. Je nach Zahlungsziel der
+                                    Tierarztrechnung treten Sie in Vorleistung oder können auf die Erstattung warten und
+                                    danach erst die Rechnung bezahlen. Eine direkte Abrechnung mit dem Tierarzt ist bei
+                                    petolo nicht möglich.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven">Was kostet die petolo Tierkrankenversicherung?</button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <p>Die petolo Tierkrankenversicherung kann für Katzen ab 19,90€ und für Hunde ab 29,90€
+                                    abgeschlossen werden. Der monatliche Beitrag für die Versicherung ist abhängig vom
+                                    gewählten Tarif, dem Alter und der Rasse Ihres Haustieres.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEight">Wie kann man die Tierkrankenversicherung
+                                abschließen?</button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                            <div class="card-body">
+                                <p>Sie können die petolo Tierkrankenversicherung ganz einfach in nur wenigen Schritten
+                                    online abschließen. Wählen Sie aus, ob Sie einen Hund oder eine Katze versichern
+                                    möchten, vergleichen Sie die 3 verschiedenen Tarife der Krankenversicherung und
+                                    entscheiden Sie sich für den, der zu Ihnen und Ihrem Tier passt. Danach fehlen nur
+                                    noch einige Angaben zu Ihnen und Ihrem Haustier und schon können Sie die
+                                    Tierversicherung abschließen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row m-0  align-items-center ">
+                <div class="col-md-8 col-12">
+                    <div class="">
+                        <div class="logggo pb-3">
+                            <img src="./assets/images/629a1f9f0aa3298ceff1e153_petolo-logo.svg"
+                                style=" height: 2.125rem;" alt="">
+                        </div>
+                        <div class="margin-bottom-1">
+                            <div class="footer-h6">Besuchen Sie uns: </div>
+                        </div>
+                        <div class="margin-bottom-2 py-3">
+                            <div class="socials-nav"><a id="social-link" href="#"
+                                    class="social-link home w-inline-block">
+                                    <img src="./assets/images/629a1f9f0aa3298842f1e164_social-home-blue.svg"
+                                        style="width: 1.5rem;" alt=""></a><a href="#" target="_blank"
+                                    class="social-link facebook w-inline-block">
+                                    <img src="./assets/images/629a1f9f0aa3294fe1f1e16f_social-fb-blue.svg"
+                                        style="width: 1.5rem;" alt=""></a><a href="#" target="_blank"
+                                    class="social-link insta w-inline-block">
+                                    <img src="./assets/images/629a1f9f0aa32934a9f1e167_social-insta-blue.svg"
+                                        style="width: 1.5rem;" alt=""></a></div>
+                        </div>
+                        <div class="footer-nav d-flex flex-wrap"><a href="#" target="_blank"
+                                class="footer-link">Gesetzl. Erstinformation</a>
+                            <div class="footer-divider">|</div><a href="#" target="_blank"
+                                class="footer-link">Impressum</a>
+                            <div class="footer-divider hide--mobile">|</div><a href="#" target="_blank"
+                                class="footer-link">Datenschutz</a>
+                            <div class="footer-divider">|</div><a whenclicked="UC_UI.showSecondLayer();"
+                                href="javascript:void(0);" class="footer-link">Cookie Einstellungen</a>
+                        </div>
+                        <div class="margin-bottom-1">
+                            <div class="footer-h6">
+                                petolo ist eine Marke der © dentolo Deutschland GmbH </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="position-relative">
+                        <img src="./assets/images/65cf7b0345f91c4fb13a3253_Footer-Dog 1.webp"
+                            style="width: 100%; height: auto;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Slick JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                slidesToShow: 3, // Display three slides at a time
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 2000, // Adjust autoplay speed as needed
+                arrows: true, // Show arrows
+                dots: true, // Show indicators
+
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1 // Display one slide at a time on smaller screens
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>
