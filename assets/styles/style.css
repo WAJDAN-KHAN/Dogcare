@@ -591,6 +591,7 @@ html.w-mod-touch * {
     transition: all .5s ease-out;
     transition-delay: .2s;
     align-items: center;
+    min-width: 300px;
 }
 .mail-card:hover{
     transform: scale(1.1);
@@ -717,6 +718,20 @@ html.w-mod-touch * {
     text-decoration: none;
     display: inline-block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(min-width:990px){
     .costs__images img {
         border-radius: 20px 0 0 20px;
@@ -826,6 +841,9 @@ html.w-mod-touch * {
 }
 .slick-next:before, .slick-prev:before{
   display: none !important;
+}
+.centerred{
+    justify-content: center !important;
 }
 
   }
