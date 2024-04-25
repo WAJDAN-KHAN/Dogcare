@@ -845,5 +845,14 @@ html.w-mod-touch * {
 .centerred{
     justify-content: center !important;
 }
-
+.costs__wrapper{
+    padding: 20px 20px;
+}
+.costs__text--blue{
+    margin-left: 0px;
+    font-size: 17px;
+}
+.slick-next{
+    right: 0px !important;
+}
   }
