@@ -776,7 +776,8 @@ html.w-mod-touch * {
 
   @media(max-width:776px){
     .bttn{
-        display: none;
+        padding: 10px;
+        text-align: center;
     }
     .wrapper-truspilot-image.hide-tablet{
         display: none;
