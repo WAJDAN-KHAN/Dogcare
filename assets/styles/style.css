@@ -34,7 +34,7 @@ body {
     font-weight: 700;
     fill: #FFFFFF;
     color: #003264;
-    background-color: #ffa445;
+    background-color: #FFCC00;
     border-radius: 7px 7px 7px 7px;
     padding: 20px 30px 20px 32px;
   }
@@ -237,7 +237,7 @@ img {
 
 }
 .button-large-orange {
-    background-color:#ffa445;
+    background-color:#FFCC00;
     color:#003264;
     text-align: center;
     border-radius: .25rem;
