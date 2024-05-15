@@ -725,7 +725,9 @@ html.w-mod-touch * {
 
 
 
-
+.des-non{
+    display: none;
+}
 
 
 
@@ -855,5 +857,14 @@ html.w-mod-touch * {
 }
 .slick-next{
     right: 0px !important;
+}
+.phonee{
+    display: none;
+}
+.mob-non{
+    display: none;
+}
+.des-non{
+    display: block;
 }
   }
