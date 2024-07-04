@@ -668,6 +668,7 @@ html.w-mod-touch * {
     transition-delay: .2s;
     align-items: center;
     min-width: 300px;
+    cursor: pointer;
 }
 
 .mail-card:hover {
@@ -1018,9 +1019,12 @@ html.w-mod-touch * {
     background: transparent;
     border: none;
     border-radius: 50%;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     font-size: 20px;
     cursor: pointer;
+    width: 90px;
+    height: 90px;
+    border: 4px solid #fffabd;
 }
 
 #video {
