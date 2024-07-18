@@ -343,7 +343,7 @@ html.w-mod-touch * {
 }
 
 .line-tile-home {
-    z-index: 1;
+    z-index: -1;
     max-width: 100%;
     position: absolute;
     top: 0%;
